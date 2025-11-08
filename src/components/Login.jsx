@@ -17,7 +17,7 @@ const Login = () => {
 
   return (
     <div className="auth-container">
-      <h2>ログイン</h2>
+      <h2>ログイン(2025/11/08 update)</h2>
       <form onSubmit={handleLogin}>
         <input
           type="email"
