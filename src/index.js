@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+// import "@aws-amplify/ui-react/styles.css";  // ←
+import './index.css'; // ← これがないと Tailwind が効かない
 import { Amplify } from "aws-amplify";
 import awsExports from "./aws-exports";
 
