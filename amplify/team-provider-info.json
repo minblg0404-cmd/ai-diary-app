@@ -1,19 +1,25 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-amplifyreactproject-dev-d35bf-authRole",
-      "UnauthRoleArn": "arn:aws:iam::839690183722:role/amplify-amplifyreactproject-dev-d35bf-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::839690183722:role/amplify-amplifyreactproject-dev-d35bf-authRole",
+      "AuthRoleName": "amplify-aidiary-dev-02029-authRole",
+      "UnauthRoleArn": "arn:aws:iam::839690183722:role/amplify-aidiary-dev-02029-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::839690183722:role/amplify-aidiary-dev-02029-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-amplifyreactproject-dev-d35bf-deployment",
-      "UnauthRoleName": "amplify-amplifyreactproject-dev-d35bf-unauthRole",
-      "StackName": "amplify-amplifyreactproject-dev-d35bf",
-      "StackId": "arn:aws:cloudformation:us-east-1:839690183722:stack/amplify-amplifyreactproject-dev-d35bf/007c22c0-bd64-11f0-853c-0affd8d6328b",
-      "AmplifyAppId": "dpulw6xub2l4i"
+      "DeploymentBucketName": "amplify-aidiary-dev-02029-deployment",
+      "UnauthRoleName": "amplify-aidiary-dev-02029-unauthRole",
+      "StackName": "amplify-aidiary-dev-02029",
+      "StackId": "arn:aws:cloudformation:us-east-1:839690183722:stack/amplify-aidiary-dev-02029/b4e5dcd0-c082-11f0-a82e-0affe0941cdb",
+      "AmplifyAppId": "d10xe8ln34l1wo"
     },
     "categories": {
-      "auth": {
-        "amplifyreactprojectf0dd8ab8": {}
+      "function": {
+        "diaryFunction": {
+          "deploymentBucketName": "amplify-aidiary-dev-02029-deployment",
+          "s3Key": "amplify-builds/diaryFunction-3376415a336a69317278-build.zip"
+        }
+      },
+      "storage": {
+        "diaries": {}
       }
     }
   }

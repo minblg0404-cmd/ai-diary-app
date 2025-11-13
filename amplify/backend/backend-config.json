@@ -1,30 +1,56 @@
 {
-  "auth": {
-    "amplifyreactprojectf0dd8ab8": {
-      "customAuth": false,
-      "dependsOn": [],
-      "frontendAuthConfig": {
-        "mfaConfiguration": "OFF",
-        "mfaTypes": [
-          "SMS"
-        ],
-        "passwordProtectionSettings": {
-          "passwordPolicyCharacters": [],
-          "passwordPolicyMinLength": 8
+  "function": {
+    "diaryFunction": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "diaries"
         },
-        "signupAttributes": [
-          "EMAIL"
-        ],
-        "socialProviders": [],
-        "usernameAttributes": [
-          "EMAIL"
-        ],
-        "verificationMechanisms": [
-          "EMAIL"
-        ]
-      },
+        {
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ],
+          "category": "storage",
+          "resourceName": "diaries"
+        }
+      ],
       "providerPlugin": "awscloudformation",
-      "service": "Cognito"
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_diaryFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "diaryFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_diaryFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "diaryFunction"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "diaries": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
     }
   }
 }

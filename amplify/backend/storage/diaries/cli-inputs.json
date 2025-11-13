@@ -1,0 +1,10 @@
+{
+  "resourceName": "diaries",
+  "tableName": "diaries",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

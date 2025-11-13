@@ -4,6 +4,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import ConfirmSignUp from "./components/ConfirmSignUp";
 import Dashboard from "./components/Dashboard";
+import DiaryForm from "./components/DiaryForm";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/confirm" element={<ConfirmSignUp />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/diary" element={<DiaryForm />} />
         <Route path="/" element={<Login />} /> {/* デフォルトはログイン */}
       </Routes>
     </BrowserRouter>
